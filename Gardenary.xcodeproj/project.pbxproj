@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0351816D24B7812A00705EBB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0351816C24B7812A00705EBB /* SignInViewController.swift */; };
+		039CE07924B47E30008B19CB /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 039CE07524B47E30008B19CB /* OpenSans-SemiBold.ttf */; };
+		039CE07A24B47E30008B19CB /* AbhayaLibre-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 039CE07624B47E30008B19CB /* AbhayaLibre-Bold.ttf */; };
+		039CE07B24B47E30008B19CB /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 039CE07724B47E30008B19CB /* OpenSans-Bold.ttf */; };
+		039CE07C24B47E30008B19CB /* AbhayaLibre-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 039CE07824B47E30008B19CB /* AbhayaLibre-Regular.ttf */; };
+		03ACF55024B77D2100CE2E0C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ACF54F24B77D2100CE2E0C /* HomeViewController.swift */; };
+		03ACF55224B77D7300CE2E0C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ACF55124B77D7300CE2E0C /* SignUpViewController.swift */; };
 		03BD753724A8CEF000318A35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BD753624A8CEF000318A35 /* AppDelegate.swift */; };
 		03BD753924A8CEF000318A35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BD753824A8CEF000318A35 /* SceneDelegate.swift */; };
-		03BD753B24A8CEF000318A35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BD753A24A8CEF000318A35 /* ViewController.swift */; };
 		03BD753E24A8CEF000318A35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BD753C24A8CEF000318A35 /* Main.storyboard */; };
 		03BD754124A8CEF000318A35 /* Gardenary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03BD753F24A8CEF000318A35 /* Gardenary.xcdatamodeld */; };
 		03BD754324A8CEF100318A35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BD754224A8CEF100318A35 /* Assets.xcassets */; };
@@ -17,10 +23,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0351816C24B7812A00705EBB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		039CE07524B47E30008B19CB /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-SemiBold.ttf"; path = "../../../fonts/OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		039CE07624B47E30008B19CB /* AbhayaLibre-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AbhayaLibre-Bold.ttf"; path = "../../../fonts/AbhayaLibre-Bold.ttf"; sourceTree = "<group>"; };
+		039CE07724B47E30008B19CB /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "../../../fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		039CE07824B47E30008B19CB /* AbhayaLibre-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AbhayaLibre-Regular.ttf"; path = "../../../fonts/AbhayaLibre-Regular.ttf"; sourceTree = "<group>"; };
+		03ACF54F24B77D2100CE2E0C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		03ACF55124B77D7300CE2E0C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		03BD753324A8CEF000318A35 /* Gardenary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gardenary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BD753624A8CEF000318A35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03BD753824A8CEF000318A35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03BD753A24A8CEF000318A35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		03BD753D24A8CEF000318A35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03BD754024A8CEF000318A35 /* Gardenary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gardenary.xcdatamodel; sourceTree = "<group>"; };
 		03BD754224A8CEF100318A35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +51,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0351816B24B77DCD00705EBB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				03ACF55124B77D7300CE2E0C /* SignUpViewController.swift */,
+				03ACF54F24B77D2100CE2E0C /* HomeViewController.swift */,
+				0351816C24B7812A00705EBB /* SignInViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		039CE05624B47BF9008B19CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				039CE07624B47E30008B19CB /* AbhayaLibre-Bold.ttf */,
+				039CE07824B47E30008B19CB /* AbhayaLibre-Regular.ttf */,
+				039CE07724B47E30008B19CB /* OpenSans-Bold.ttf */,
+				039CE07524B47E30008B19CB /* OpenSans-SemiBold.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		03BD752A24A8CEF000318A35 = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +91,10 @@
 		03BD753524A8CEF000318A35 /* Gardenary */ = {
 			isa = PBXGroup;
 			children = (
+				039CE05624B47BF9008B19CB /* Resources */,
 				03BD753624A8CEF000318A35 /* AppDelegate.swift */,
+				0351816B24B77DCD00705EBB /* View Controllers */,
 				03BD753824A8CEF000318A35 /* SceneDelegate.swift */,
-				03BD753A24A8CEF000318A35 /* ViewController.swift */,
 				03BD753C24A8CEF000318A35 /* Main.storyboard */,
 				03BD754224A8CEF100318A35 /* Assets.xcassets */,
 				03BD754424A8CEF100318A35 /* LaunchScreen.storyboard */,
@@ -128,9 +162,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039CE07924B47E30008B19CB /* OpenSans-SemiBold.ttf in Resources */,
 				03BD754624A8CEF100318A35 /* LaunchScreen.storyboard in Resources */,
+				039CE07B24B47E30008B19CB /* OpenSans-Bold.ttf in Resources */,
 				03BD754324A8CEF100318A35 /* Assets.xcassets in Resources */,
+				039CE07A24B47E30008B19CB /* AbhayaLibre-Bold.ttf in Resources */,
 				03BD753E24A8CEF000318A35 /* Main.storyboard in Resources */,
+				039CE07C24B47E30008B19CB /* AbhayaLibre-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03BD753B24A8CEF000318A35 /* ViewController.swift in Sources */,
+				03ACF55224B77D7300CE2E0C /* SignUpViewController.swift in Sources */,
 				03BD753724A8CEF000318A35 /* AppDelegate.swift in Sources */,
+				0351816D24B7812A00705EBB /* SignInViewController.swift in Sources */,
 				03BD753924A8CEF000318A35 /* SceneDelegate.swift in Sources */,
 				03BD754124A8CEF000318A35 /* Gardenary.xcdatamodeld in Sources */,
+				03ACF55024B77D2100CE2E0C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
