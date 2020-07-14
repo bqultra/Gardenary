@@ -221,6 +221,9 @@
                                 <state key="normal" title="Sign up" backgroundImage="sign_btn">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpButton:" destination="E3k-yW-Rje" eventType="touchUpInside" id="wIx-BQ-rDU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3h6-62-OBW">
                                 <rect key="frame" x="35" y="110.00000000000001" width="183" height="56.666666666666671"/>
@@ -245,6 +248,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="firstNameTextField:" destination="E3k-yW-Rje" eventType="editingDidEnd" id="Ite-i4-6f4"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -265,6 +271,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="emailTextField:" destination="E3k-yW-Rje" eventType="editingDidEnd" id="fDO-TL-fTw"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -285,6 +294,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="passwordTextField:" destination="E3k-yW-Rje" eventType="editingDidEnd" id="0S7-b5-A4l"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -303,6 +315,9 @@
                                         <state key="normal" title="terms of use">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="termsOfUse:" destination="E3k-yW-Rje" eventType="touchUpInside" id="Oqw-kv-PHq"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPw-Nz-GAc">
                                         <rect key="frame" x="92.999999999999986" y="0.0" width="26" height="32"/>
@@ -316,6 +331,9 @@
                                         <state key="normal" title="privacy policy.">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="privacyPolicy:" destination="E3k-yW-Rje" eventType="touchUpInside" id="Hz7-qQ-8Bi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

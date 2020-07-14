@@ -9,7 +9,8 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    
+    //Back to Sign In button
     @IBAction func signin_btn(_ sender: UIButton) {
         _ = navigationController?.popViewController(animated: true)
     }
@@ -20,10 +21,31 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //White Status Bar
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-
+ 
+    //Text fields
+    @IBAction func firstNameTextField(_ sender: Any) {
+    }
+    
+    @IBAction func emailTextField(_ sender: Any) {
+    }
+    
+    @IBAction func passwordTextField(_ sender: Any) {
+    }
+    
+    //Form buttons
+    @IBAction func signUpButton(_ sender: Any) {
+    }
+    
+    @IBAction func termsOfUse(_ sender: Any) {
+    }
+    
+    @IBAction func privacyPolicy(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
