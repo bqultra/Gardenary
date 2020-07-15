@@ -46,6 +46,10 @@ class SignUpViewController: UIViewController {
     @IBAction func privacyPolicy(_ sender: Any) {
     }
     
+    @IBAction func signUpTapped(_ sender: Any) {
+    }
+    
+    
     /*
     // MARK: - Navigation
 

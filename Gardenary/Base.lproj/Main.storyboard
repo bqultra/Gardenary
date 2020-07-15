@@ -223,6 +223,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signUpButton:" destination="E3k-yW-Rje" eventType="touchUpInside" id="wIx-BQ-rDU"/>
+                                    <action selector="signUpTapped:" destination="E3k-yW-Rje" eventType="touchUpInside" id="ACu-vF-6p9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3h6-62-OBW">

@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0351816D24B7812A00705EBB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0351816C24B7812A00705EBB /* SignInViewController.swift */; };
+		036B815B24BEF2110006D462 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 036B815A24BEF2110006D462 /* GoogleService-Info.plist */; };
 		039CE07924B47E30008B19CB /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 039CE07524B47E30008B19CB /* OpenSans-SemiBold.ttf */; };
 		039CE07A24B47E30008B19CB /* AbhayaLibre-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 039CE07624B47E30008B19CB /* AbhayaLibre-Bold.ttf */; };
 		039CE07B24B47E30008B19CB /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 039CE07724B47E30008B19CB /* OpenSans-Bold.ttf */; };
@@ -20,10 +21,12 @@
 		03BD754124A8CEF000318A35 /* Gardenary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03BD753F24A8CEF000318A35 /* Gardenary.xcdatamodeld */; };
 		03BD754324A8CEF100318A35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BD754224A8CEF100318A35 /* Assets.xcassets */; };
 		03BD754624A8CEF100318A35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BD754424A8CEF100318A35 /* LaunchScreen.storyboard */; };
+		79531CB2C64661FB7AEF3CB0 /* Pods_Gardenary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24E06758B5BA1868315DF4A /* Pods_Gardenary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0351816C24B7812A00705EBB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		036B815A24BEF2110006D462 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		039CE07524B47E30008B19CB /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-SemiBold.ttf"; path = "../../../fonts/OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		039CE07624B47E30008B19CB /* AbhayaLibre-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AbhayaLibre-Bold.ttf"; path = "../../../fonts/AbhayaLibre-Bold.ttf"; sourceTree = "<group>"; };
 		039CE07724B47E30008B19CB /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "../../../fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -38,6 +41,9 @@
 		03BD754224A8CEF100318A35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03BD754524A8CEF100318A35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03BD754724A8CEF100318A35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F537AE076AF468273A89EEF /* Pods-Gardenary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gardenary.release.xcconfig"; path = "Target Support Files/Pods-Gardenary/Pods-Gardenary.release.xcconfig"; sourceTree = "<group>"; };
+		B24E06758B5BA1868315DF4A /* Pods_Gardenary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gardenary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40342F82EEEE3AA56961866 /* Pods-Gardenary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gardenary.debug.xcconfig"; path = "Target Support Files/Pods-Gardenary/Pods-Gardenary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +51,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79531CB2C64661FB7AEF3CB0 /* Pods_Gardenary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		008252854ECC908F4D9793C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C40342F82EEEE3AA56961866 /* Pods-Gardenary.debug.xcconfig */,
+				2F537AE076AF468273A89EEF /* Pods-Gardenary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		0351816B24B77DCD00705EBB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +93,8 @@
 			children = (
 				03BD753524A8CEF000318A35 /* Gardenary */,
 				03BD753424A8CEF000318A35 /* Products */,
+				008252854ECC908F4D9793C3 /* Pods */,
+				449FA20B0F62C55B7CD21F7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +117,18 @@
 				03BD754224A8CEF100318A35 /* Assets.xcassets */,
 				03BD754424A8CEF100318A35 /* LaunchScreen.storyboard */,
 				03BD754724A8CEF100318A35 /* Info.plist */,
+				036B815A24BEF2110006D462 /* GoogleService-Info.plist */,
 				03BD753F24A8CEF000318A35 /* Gardenary.xcdatamodeld */,
 			);
 			path = Gardenary;
+			sourceTree = "<group>";
+		};
+		449FA20B0F62C55B7CD21F7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B24E06758B5BA1868315DF4A /* Pods_Gardenary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03BD754A24A8CEF100318A35 /* Build configuration list for PBXNativeTarget "Gardenary" */;
 			buildPhases = (
+				6EA1A29A6B41D3E5572E333A /* [CP] Check Pods Manifest.lock */,
 				03BD752F24A8CEF000318A35 /* Sources */,
 				03BD753024A8CEF000318A35 /* Frameworks */,
 				03BD753124A8CEF000318A35 /* Resources */,
+				03505DCD0CBA1708381A1369 /* [CP] Embed Pods Frameworks */,
+				681EEE84925EE8F60EA1B68E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				039CE07924B47E30008B19CB /* OpenSans-SemiBold.ttf in Resources */,
+				036B815B24BEF2110006D462 /* GoogleService-Info.plist in Resources */,
 				03BD754624A8CEF100318A35 /* LaunchScreen.storyboard in Resources */,
 				039CE07B24B47E30008B19CB /* OpenSans-Bold.ttf in Resources */,
 				03BD754324A8CEF100318A35 /* Assets.xcassets in Resources */,
@@ -173,6 +204,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03505DCD0CBA1708381A1369 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gardenary/Pods-Gardenary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gardenary/Pods-Gardenary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gardenary/Pods-Gardenary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		681EEE84925EE8F60EA1B68E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gardenary/Pods-Gardenary-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gardenary/Pods-Gardenary-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gardenary/Pods-Gardenary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EA1A29A6B41D3E5572E333A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gardenary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03BD752F24A8CEF000318A35 /* Sources */ = {
@@ -326,6 +416,7 @@
 		};
 		03BD754B24A8CEF100318A35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C40342F82EEEE3AA56961866 /* Pods-Gardenary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -344,6 +435,7 @@
 		};
 		03BD754C24A8CEF100318A35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F537AE076AF468273A89EEF /* Pods-Gardenary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

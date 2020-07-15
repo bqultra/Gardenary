@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>888010324421-c99b2gl900crdvahj1abtmuv7a1ddtac.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.888010324421-c99b2gl900crdvahj1abtmuv7a1ddtac</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>888010324421-ohek49cjf6ifm2djuhdvsatbe9tbar43.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDVqgVGzj-uLFSIRbRQKuUFBrDjTRRyO6A</string>
+	<key>GCM_SENDER_ID</key>
+	<string>888010324421</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Gardenary</string>
+	<key>PROJECT_ID</key>
+	<string>gardenary</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gardenary.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<true/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:888010324421:ios:8873f6dce188e22332f3ac</string>
+	<key>DATABASE_URL</key>
+	<string>https://gardenary.firebaseio.com</string>
+</dict>
+</plist>
