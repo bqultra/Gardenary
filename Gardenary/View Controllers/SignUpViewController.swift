@@ -19,6 +19,7 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        hideInvalidErrors()
     }
     
     //White Status Bar
@@ -46,18 +47,35 @@ class SignUpViewController: UIViewController {
     @IBAction func privacyPolicy(_ sender: Any) {
     }
     
+    //Form validation errors
+    
+    @IBOutlet weak var firstNameValid: UILabel!
+    
+    @IBOutlet weak var emailValid: UILabel!
+    
+    @IBOutlet weak var passwordValid: UILabel!
+    
+    func hideInvalidErrors() {
+        firstNameValid.alpha = 0
+        emailValid.alpha = 0
+        passwordValid.alpha = 0
+    }
+    
+//    func validateFields() -> String? {
+//        
+//    }
+    
+    //Sign Up button tapped
     @IBAction func signUpTapped(_ sender: Any) {
+        
+        //Validate the fields
+        
+        //Create the user
+        
+        //Transition to Home
+        
+        
     }
     
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
