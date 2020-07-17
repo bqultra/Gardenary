@@ -61,6 +61,8 @@ class SignUpViewController: UIViewController {
         passwordValid.alpha = 0
     }
     
+    //Validation function
+    
 //    func validateFields() -> String? {
 //        
 //    }
