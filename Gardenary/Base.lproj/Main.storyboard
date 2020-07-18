@@ -195,6 +195,7 @@
                         <outlet property="fb_btn" destination="5TW-5d-Wac" id="4O8-tc-qXj"/>
                         <outlet property="forgotPassword" destination="7Jg-sE-8Ff" id="i8u-1s-xam"/>
                         <outlet property="google_btn" destination="mdy-dy-WA8" id="nZ9-65-HYe"/>
+                        <outlet property="passwordFieldIcon" destination="7bi-px-Kem" id="gXW-l4-v4k"/>
                         <outlet property="passwordTextField" destination="7bi-px-Kem" id="Ht6-8e-28W"/>
                         <outlet property="signInButton" destination="iNZ-ql-yWg" id="YZP-pe-6zK"/>
                         <outlet property="sign_up" destination="u5I-zB-dJI" id="e4d-gI-KhC"/>
@@ -425,6 +426,7 @@
                     <connections>
                         <outlet property="emailValid" destination="hHh-ZM-LUl" id="kXV-yl-dDG"/>
                         <outlet property="firstNameValid" destination="lIX-5V-MY3" id="Gnc-1Q-avs"/>
+                        <outlet property="passwordFieldIcon" destination="U0x-0M-dtY" id="bKJ-sn-GFQ"/>
                         <outlet property="passwordValid" destination="nXs-9c-2zJ" id="720-Aq-Bvc"/>
                     </connections>
                 </viewController>
