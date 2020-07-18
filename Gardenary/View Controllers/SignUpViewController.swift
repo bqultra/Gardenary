@@ -17,6 +17,9 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Hide keyboard tapping anywhere
+        hideKeyboardWhenTappedAround()
 
         // Do any additional setup after loading the view.
         hideInvalidErrors()
