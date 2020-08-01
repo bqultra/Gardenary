@@ -17,7 +17,7 @@ class SignUpViewController: UIViewController {
         hideKeyboardWhenTappedAround()
 
         // Do any additional setup after loading the view.
-        hideInvalidErrors()
+        hideError()
         
         //Show/hide password - styling button inside UITextField
         passwordFieldIcon.rightViewMode = .whileEditing
@@ -46,11 +46,9 @@ class SignUpViewController: UIViewController {
         return .lightContent
     }
     
-    //Hide text fields errors
-    func hideInvalidErrors() {
-        firstNameValid.alpha = 0
-        emailValid.alpha = 0
-        passwordValid.alpha = 0
+    //Hide text field error
+    func hideError() {
+        errorField.alpha = 0
     }
     
     //SHOW/HIDE PASSWORD *** Show or Hide password (Eye Icon)
@@ -71,12 +69,11 @@ class SignUpViewController: UIViewController {
     }
  
     //Text fields
-    @IBAction func firstNameTextField(_ sender: Any) {
-    }
-    @IBAction func emailTextField(_ sender: Any) {
-    }
-    @IBAction func passwordTextField(_ sender: Any) {
-    }
+    @IBOutlet weak var firstNameTextField: UITextField!
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
     
     //Form buttons
     @IBAction func signUpButton(_ sender: Any) {
@@ -87,15 +84,18 @@ class SignUpViewController: UIViewController {
     }
     
     //Form validation errors
-    @IBOutlet weak var firstNameValid: UILabel!
-    @IBOutlet weak var emailValid: UILabel!
-    @IBOutlet weak var passwordValid: UILabel!
+    @IBOutlet weak var errorField: UILabel!
+    
     
     //Validation function
-    
-//    func validateFields() -> String? {
-//        
-//    }
+    func validateFields() -> String? {
+        if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            
+            return "Please fill in all fields."
+        }
+        
+        return nil
+    }
     
     //Sign Up button tapped
     @IBAction func signUpTapped(_ sender: Any) {
