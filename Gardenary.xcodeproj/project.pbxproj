@@ -22,6 +22,7 @@
 		03BD754124A8CEF000318A35 /* Gardenary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03BD753F24A8CEF000318A35 /* Gardenary.xcdatamodeld */; };
 		03BD754324A8CEF100318A35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BD754224A8CEF100318A35 /* Assets.xcassets */; };
 		03BD754624A8CEF100318A35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BD754424A8CEF100318A35 /* LaunchScreen.storyboard */; };
+		03F0A34024D694F70066D762 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0A33F24D694F70066D762 /* Constants.swift */; };
 		79531CB2C64661FB7AEF3CB0 /* Pods_Gardenary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24E06758B5BA1868315DF4A /* Pods_Gardenary.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		03BD754224A8CEF100318A35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03BD754524A8CEF100318A35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03BD754724A8CEF100318A35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F0A33F24D694F70066D762 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2F537AE076AF468273A89EEF /* Pods-Gardenary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gardenary.release.xcconfig"; path = "Target Support Files/Pods-Gardenary/Pods-Gardenary.release.xcconfig"; sourceTree = "<group>"; };
 		B24E06758B5BA1868315DF4A /* Pods_Gardenary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gardenary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40342F82EEEE3AA56961866 /* Pods-Gardenary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gardenary.debug.xcconfig"; path = "Target Support Files/Pods-Gardenary/Pods-Gardenary.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,9 +113,9 @@
 		03BD753524A8CEF000318A35 /* Gardenary */ = {
 			isa = PBXGroup;
 			children = (
+				03F0A33E24D694D80066D762 /* Helpers */,
 				039CE05624B47BF9008B19CB /* Resources */,
 				03BD753624A8CEF000318A35 /* AppDelegate.swift */,
-				0359308124C34AEF007E9928 /* Utilities.swift */,
 				0351816B24B77DCD00705EBB /* View Controllers */,
 				03BD753824A8CEF000318A35 /* SceneDelegate.swift */,
 				03BD753C24A8CEF000318A35 /* Main.storyboard */,
@@ -124,6 +126,15 @@
 				03BD753F24A8CEF000318A35 /* Gardenary.xcdatamodeld */,
 			);
 			path = Gardenary;
+			sourceTree = "<group>";
+		};
+		03F0A33E24D694D80066D762 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0359308124C34AEF007E9928 /* Utilities.swift */,
+				03F0A33F24D694F70066D762 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		449FA20B0F62C55B7CD21F7A /* Frameworks */ = {
@@ -279,6 +290,7 @@
 				03BD753924A8CEF000318A35 /* SceneDelegate.swift in Sources */,
 				03BD754124A8CEF000318A35 /* Gardenary.xcdatamodeld in Sources */,
 				03ACF55024B77D2100CE2E0C /* HomeViewController.swift in Sources */,
+				03F0A34024D694F70066D762 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

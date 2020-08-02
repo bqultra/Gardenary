@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class SignUpViewController: UIViewController {
     
@@ -94,6 +96,14 @@ class SignUpViewController: UIViewController {
             return "Please fill in all fields."
         }
         
+        let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if isPasswordValid(cleanedPassword) == false {
+            
+            return "Your password must have at least 8 characters, one number and special sign."
+            
+        }
+        
         return nil
     }
     
@@ -101,13 +111,68 @@ class SignUpViewController: UIViewController {
     @IBAction func signUpTapped(_ sender: Any) {
         
         //Validate the fields
+        let error = validateFields()
         
-        //Create the user
-        
-        //Transition to Home
-        
+        if error != nil {
+            
+            showError(error!)
+            
+        } else {
+            
+            //Clean data from text fields
+            
+            let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            //Create the user
+            
+            Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
+                
+                //Check for errors
+                
+                if err != nil {
+                    
+                    self.showError("Error creating the user")
+                    
+                } else {
+                    
+                    let db = Firestore.firestore().document(email)
+                    
+                    db.collection("users").addDocument(data: ["firstname": firstName, "UID": result!.user.uid ]) { (error) in
+                        
+                        if error != nil {
+                            
+                            self.showError("Error saving user data")
+                            
+                        }
+                        
+                    }
+                    
+                }
+                
+            }
+            
+            //Transition to Home
+            self.transitionToHome()
+        }
         
     }
     
+    func showError(_ message: String) {
+        
+        errorField.text = message
+        errorField.alpha = 1
+        
+    }
+    
+    func transitionToHome() {
+        
+        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        
+        view.window?.rootViewController = homeViewController
+        view.window?.makeKeyAndVisible()
+        
+    }
     
 }

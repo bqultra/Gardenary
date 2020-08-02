@@ -16,6 +16,9 @@ class HomeViewController: UIViewController {
         //Hide keyboard tapping anywhere
         hideKeyboardWhenTappedAround()
 
-        // Do any additional setup after loading the view.
+        //Light status bar
+        var preferredStatusBarStyle: UIStatusBarStyle {
+            return .lightContent
+        }
     }
 }

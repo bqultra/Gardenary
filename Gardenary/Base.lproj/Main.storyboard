@@ -424,7 +424,7 @@
         <!--Home View Controller-->
         <scene sceneID="IkO-4z-cT3">
             <objects>
-                <viewController id="7ST-s3-pje" customClass="HomeViewController" customModule="Gardenary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="7ST-s3-pje" customClass="HomeViewController" customModule="Gardenary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m12-xE-5q7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
